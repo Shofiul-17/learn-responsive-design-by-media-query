@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    width: 500px;
+    height: 500px;
+    background-color: red;
+}
+
+/* ======================================================================================================================= */
+          /* ===== Using Max-width ===== */
+          /* NOTE: Always Try to use Max-width options & 
+             As a beginner desktop approach is the best way to use Max-width on Media query */
+          /* Desktop approach means use Max-width sequentially large screen to small screen 
+            (Like, 1st desktop, 2nd laptop, 3rd tablet and 4th mobile device) */
+/* ======================================================================================================================= */
+@media only screen and (max-width: 1000px) {
+    .box {
+        background-color: green;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .box {
+        background-color: yellow;
+    }
+}
+
+
+/* ================================================================================================ */
+                  /* ===== Using Min-width (This will NOT work properly) ===== */ 
+                  /* NOTE: Try to avoid use Min-width options */
+/* ================================================================================================ */
+/* @media only screen and (min-width: 1000px) {
+    .box {
+        background-color: green;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .box {
+        background-color: yellow;
+    }
+} */
+
+
+/* =========================================================================================================== */
+   /* ===== Using Min-width (This will work properly. Because it just reverse the MIn-width px line ) ===== */ 
+   /* NOTE: Try to avoid use Min-width options */
+/* =========================================================================================================== */
+/* @media only screen and (min-width: 600px) {
+    .box {
+        background-color: yellow;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .box {
+        background-color: green;
+    }
+} */
+
